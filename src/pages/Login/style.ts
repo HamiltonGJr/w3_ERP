@@ -8,7 +8,8 @@ export const ContainerLogin = styled.div`
   justify-content: space-between;
 `;
 export const ContainerForm = styled.div`
-  margin-left: 17%;
+  width: 22%;
+  margin-left: 16%;
 `;
 export const TextH3 = styled.h3`
   margin: 0 0 01% 0;
@@ -17,6 +18,9 @@ export const TextH3 = styled.h3`
 `;
 export const TextH1 = styled.h1`
   margin: 0 0 05% 0;
+`;
+export const Form = styled.form`
+  width: 100%;
 `;
 export const ContainerRemindMe = styled.div`
   width: 100%;
@@ -42,7 +46,15 @@ export const TextRemindMe = styled.p`
   font-size: ${theme.fonts.fontSizes.normal};
   color: ${theme.colors.grays.gray700};
 `;
-export const ImgFolder = styled.img`
-  width: 43%;
+export const ContainerImgFolder = styled.div`
+  width: 45%;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${theme.colors.primary.main};
+`;
+export const ImgFolder = styled.img`
+  width: 87%;
+  height: 100%;
 `;
