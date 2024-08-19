@@ -5,11 +5,13 @@ export interface FormInputProps {
   htmlFor: string;
   placeholder: string;
   isPassword?: boolean;
+  value: string;
   onChange?: (e: ChangeEvent<HTMLInputElement>) => void;
-  value?: string;
+  colorAlert?: string;
 }
 
 export interface ButtonProps {
   children: string;
   onClick?: () => void;
+  disabled?: boolean;
 }
