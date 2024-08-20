@@ -13,11 +13,5 @@ export const Button = styled.button<{ disabled?: boolean }>`
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
   color: ${theme.colors.others.white};
   background-color: ${({ disabled }) =>
-    disabled ? theme.colors.grays.gray400 : theme.colors.secondary.main};
-  transition: 0.2s;
-  &:hover {
-    background-color: ${({ disabled }) =>
-      disabled ? theme.colors.grays.gray400 : theme.colors.primary.main};
-    transition: 0.2s;
-  }
+    disabled ? theme.colors.grays.gray400 : theme.colors.primary.main};
 `;
