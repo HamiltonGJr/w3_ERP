@@ -10,6 +10,7 @@ export const AsideContainer = styled.aside`
   align-items: center;
   flex-direction: column;
   background-color: ${theme.colors.primary.main};
+  position: fixed;
 `;
 export const ContainerWhiteLogo = styled.div`
   padding-top: 49px;
