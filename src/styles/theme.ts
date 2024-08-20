@@ -2,9 +2,10 @@ const theme = {
   colors: {
     primary: {
       main: "#001d9e",
-      dark: "#796ce0",
+      dark: "#796CE0",
       medium: "#a594ff",
-      light: "#a594ff",
+      light: "#c4cfff",
+      opacity: "hsl(213, 100%, 31%)",
     },
     secondary: {
       main: "#ffc14a",
