@@ -2,7 +2,8 @@ const theme = {
   colors: {
     primary: {
       main: "#001d9e",
-      dark: "#796CE0",
+      dark: "#02156a",
+      innerDark: "#000e4c",
       medium: "#a594ff",
       light: "#c4cfff",
       opacity: "hsl(213, 100%, 31%)",
