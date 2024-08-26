@@ -1,8 +1,8 @@
 import React from "react";
 
-import DefaultMenu from "../../assets/imgSGV/DefaultMenu";
-import User from "../../assets/imgSGV/User";
-import DownArrow from "../../assets/imgSGV/DownArrow";
+import DefaultMenu from "../../assets/svg/DefaultMenu";
+import User from "../../assets/svg/User";
+import DownArrow from "../../assets/svg/DownArrow";
 import {
   BlueBallUser,
   ButtonDefaultMenu,

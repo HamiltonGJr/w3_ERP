@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
-import OpenEye from "../../assets/imgSGV/OpenEye";
-import ClosedEye from "../../assets/imgSGV/ClosedEye";
+import OpenEye from "../../assets/svg/OpenEye";
+import ClosedEye from "../../assets/svg/ClosedEye";
 import { ButtonEye, ContainerInput, Label } from "./style";
 import { FormInputProps } from "../../types/typesComponents";
 

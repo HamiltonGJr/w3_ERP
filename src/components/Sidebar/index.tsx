@@ -1,9 +1,9 @@
 import React from "react";
 
-import WhiteLogo from "../../assets/imgSGV/WhiteLogo";
-import PieTwo from "../../assets/imgSGV/PieTwo";
-import ChartLine from "../../assets/imgSGV/ChartLine";
-import FacialCleanser from "../../assets/imgSGV/FacialCleanser";
+import WhiteLogo from "../../assets/svg/WhiteLogo.tsx";
+import PieTwo from "../../assets/svg/PieTwo";
+import ChartLine from "../../assets/svg/ChartLine";
+import FacialCleanser from "../../assets/svg/FacialCleanser";
 import HandsConnecting from "../../assets/img/handsConnecting.svg";
 import { Button } from "../FormButton/style";
 import {
