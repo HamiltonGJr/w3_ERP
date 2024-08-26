@@ -15,3 +15,16 @@ export interface ButtonProps {
   onClick?: () => void;
   disabled?: boolean;
 }
+
+export type RadialBarProps = {
+  percentageGraphic: number;
+};
+
+export interface GraphicCardProps {
+  nameGraphic: string;
+  numberGraphic: number;
+  posOrNegPercentage: number;
+  highOrLowPercentage: string;
+  percentageGraphic: number;
+  isPositive: boolean;
+}
