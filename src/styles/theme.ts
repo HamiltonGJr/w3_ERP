@@ -4,7 +4,7 @@ const theme = {
       main: "#001d9e",
       dark: "#02156a",
       innerDark: "#000e4c",
-      medium: "#a594ff",
+      medium: "#796ce0",
       light: "#c4cfff",
       opacity: "hsl(213, 100%, 31%)",
     },
