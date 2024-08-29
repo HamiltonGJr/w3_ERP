@@ -1,4 +1,4 @@
-import { ChangeEvent } from "react";
+import { ChangeEvent, ReactElement, ReactNode } from "react";
 
 export interface FormInputProps {
   label: string;
@@ -27,4 +27,31 @@ export interface GraphicCardProps {
   highOrLowPercentage: string;
   percentageGraphic: number;
   isPositive: boolean;
+}
+
+export interface MenuTableProps {
+  icon: ReactElement;
+  title: string;
+  buttonHighOrLow?: ReactElement;
+  children: ReactNode;
+  generalwidthContainer: string;
+  backgroundColor: string;
+}
+
+export interface TableProps {
+  headers: string[];
+  children: ReactNode;
+}
+
+export interface SearchHeaderProps {
+  title: string;
+  onClickSearch?: () => void;
+  iconFilter?: ReactElement;
+  onClickFilter?: () => void;
+}
+
+export interface CardPredictionProps {
+  client: string;
+  onClickNavigate?: () => void;
+  id: string;
 }
