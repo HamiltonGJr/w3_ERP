@@ -15,6 +15,7 @@ import {
   NavBar,
   TextConnecting,
 } from "./style";
+import theme from "../../styles/theme.ts";
 
 const Sidebar = () => {
   return (
@@ -30,13 +31,13 @@ const Sidebar = () => {
             Dashboard
           </ButtonLink>
 
-          <ButtonLink to={"/predictions"}>
+          <ButtonLink to={"/prediction"}>
             <ChartLine />
             Predições
           </ButtonLink>
 
           <ButtonLink to={"/products"}>
-            <FacialCleanser />
+            <FacialCleanser color={theme.colors.others.white} />
             Produtos
           </ButtonLink>
         </NavBar>
