@@ -6,7 +6,7 @@ const theme = {
       innerDark: "#000e4c",
       medium: "#796ce0",
       light: "#c4cfff",
-      opacity: "hsl(213, 100%, 31%)",
+      opacity: "hsla(233, 100%, 31%)",
     },
     secondary: {
       main: "#ffc14a",
