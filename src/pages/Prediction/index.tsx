@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from "react";
 
-import {
-  ContainerBody,
-  ContainerContent,
-  ContainerMain,
-  ScrollContainer,
-} from "./style";
+import { ContainerContent, ScrollContainer } from "./style";
 import Sidebar from "../../components/Sidebar";
 import Header from "../../components/Header";
 import SearchHeader from "../../components/SearchHeader";
 import CardPrediction from "../../components/CardPrediction";
-import { Products } from "../../types/typesProduct";
 import getCustomers from "../../services/serviceCustumers";
+import { ContainerBody, ContainerMain } from "../../styles/styleGlobal";
+import { Clients } from "../../types/typesClients";
 
 const Prediction = () => {
-  const [clients, setClients] = useState<Products[]>([]);
+  const [clients, setClients] = useState<Clients[]>([]);
 
   useEffect(() => {
     const fetchCustomers = async () => {
@@ -43,7 +39,12 @@ const Prediction = () => {
           <ScrollContainer>
             <ContainerContent>
               {clients.map((client) => (
-                <CardPrediction client={client.name} id={client.name} />
+                <CardPrediction
+                  client={client.name}
+                  id={client.id}
+                  telefone={client.phone}
+                  email={client.email}
+                />
               ))}
             </ContainerContent>
           </ScrollContainer>
