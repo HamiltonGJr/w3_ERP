@@ -16,6 +16,7 @@ const MenuTable: React.FC<MenuTableProps> = ({
   children,
   generalwidthContainer,
   backgroundColor,
+  colorTitle,
 }) => {
   return (
     <>
@@ -26,7 +27,7 @@ const MenuTable: React.FC<MenuTableProps> = ({
               {icon}
             </ContainerIcon>
 
-            <Title>{title}</Title>
+            <Title colorTitle={colorTitle}>{title}</Title>
           </ContainerTitleIcon>
 
           <div>{buttonHighOrLow}</div>

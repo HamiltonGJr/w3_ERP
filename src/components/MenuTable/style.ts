@@ -33,8 +33,8 @@ export const ContainerIcon = styled.div<ContainerIconProps>`
   border-radius: 08px;
   background-color: ${(props) => props.backgroundColor};
 `;
-export const Title = styled.p`
+export const Title = styled.p<{ colorTitle: string }>`
   font-size: ${theme.fonts.fontSizes.large};
   font-weight: ${theme.fonts.fontWeight.semiBold};
-  color: ${theme.colors.grays.gray900};
+  color: ${(props) => props.colorTitle};
 `;
