@@ -12,7 +12,7 @@ import GraphUp from "../../assets/svg/GraphUp";
 import Table from "../../components/Table";
 import GraphDown from "../../assets/svg/GraphDown";
 import { Products } from "../../types/typesProduct";
-import { getProducts } from "../../services/serviceProducts";
+import getProducts from "../../services/serviceProducts";
 
 const DetailClient = () => {
   const [porducts, setProducts] = useState<Products[]>([]);

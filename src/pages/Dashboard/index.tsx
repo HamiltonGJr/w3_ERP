@@ -13,7 +13,7 @@ import {
 } from "./style";
 import GraphicCard from "../../components/GraphicCard";
 import Table from "../../components/Table";
-import { getProducts } from "../../services/serviceProducts";
+import getProducts from "../../services/serviceProducts";
 import getCustomers from "../../services/serviceCustumers";
 import MenuTable from "../../components/MenuTable";
 import FacialCleanser from "../../assets/svg/FacialCleanser";

@@ -10,7 +10,7 @@ import MenuTable from "../../components/MenuTable";
 import Table from "../../components/Table";
 import { Products } from "../../types/typesProduct";
 import theme from "../../styles/theme";
-import { getProducts } from "../../services/serviceProducts";
+import getProducts from "../../services/serviceProducts";
 import FacialCleanser from "../../assets/svg/FacialCleanser";
 import HistoryClock from "../../assets/svg/HistoryClock";
 import ButtonCheck from "../../assets/svg/ButtonCheck";
@@ -99,9 +99,11 @@ const DetailPrediction = () => {
                     <td>{extractDay(product.lastPurchase!)}</td>
                     <td>{product.amount}</td>
                     <td>
-                      <ContainerButtonCheck>
-                        <ButtonCheck />
-                      </ContainerButtonCheck>
+                      <ContainerButton>
+                        <ContainerButtonCheck>
+                          <ButtonCheck />
+                        </ContainerButtonCheck>
+                      </ContainerButton>
                     </td>
                   </tr>
                 ))}

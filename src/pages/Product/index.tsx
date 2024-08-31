@@ -7,7 +7,7 @@ import SearchHeader from "../../components/SearchHeader";
 import Filter from "../../assets/svg/Filter";
 import Table from "../../components/Table";
 import { Products } from "../../types/typesProduct";
-import { getProducts } from "../../services/serviceProducts";
+import getProducts from "../../services/serviceProducts";
 import {
   ContainerDown,
   ContainerProductTable,
