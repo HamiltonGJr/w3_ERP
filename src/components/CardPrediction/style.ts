@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import theme from "../../styles/theme";
 
@@ -47,7 +48,7 @@ export const StatusText = styled.p`
   font-family: ${theme.fonts.fontFamily.secondary};
   color: ${theme.statusAlert.success};
 `;
-export const ButtonNavigate = styled.button`
+export const ButtonNavigate = styled(Link)`
   border: none;
   cursor: pointer;
   background-color: ${theme.colors.others.white};
