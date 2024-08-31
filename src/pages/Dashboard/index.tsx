@@ -4,17 +4,16 @@ import Sidebar from "../../components/Sidebar";
 import Header from "../../components/Header";
 import Data from "../../assets/svg/Data";
 import {
-  ContainerBody,
+  ButtonLink,
   ContainerGraphic,
   ContainerGraphicCard,
-  ContainerMain,
   ContainerMenu,
   HeaderGraphic,
   TextGrafphic,
 } from "./style";
 import GraphicCard from "../../components/GraphicCard";
 import Table from "../../components/Table";
-import getProducts from "../../services/serviceProducts";
+import { getProducts } from "../../services/serviceProducts";
 import getCustomers from "../../services/serviceCustumers";
 import MenuTable from "../../components/MenuTable";
 import FacialCleanser from "../../assets/svg/FacialCleanser";
@@ -23,10 +22,12 @@ import EveryUser from "../../assets/svg/EveryUser";
 import RightArrow from "../../assets/svg/RightArrow";
 import { Products } from "../../types/typesProduct";
 import SwitchButton from "../../components/SwitchButton";
+import { ContainerBody, ContainerMain } from "../../styles/styleGlobal";
+import { Clients } from "../../types/typesClients";
 
 const Dashboard = () => {
   const [products, setProducts] = useState<Products[]>([]);
-  const [clients, setClients] = useState<Products[]>([]);
+  const [clients, setClients] = useState<Clients[]>([]);
 
   const [productsActiveFilter, setProductsActiveFilter] = useState<
     "positive" | "negative"
@@ -152,6 +153,7 @@ const Dashboard = () => {
               icon={<FacialCleanser color={theme.colors.primary.main} />}
               title="Produtos"
               generalwidthContainer="675px"
+              colorTitle={theme.colors.grays.gray900}
               backgroundColor={theme.colors.primary.light}
               buttonHighOrLow={
                 <SwitchButton
@@ -167,7 +169,18 @@ const Dashboard = () => {
                     <td>{product.name}</td>
                     <td>{formatPercentage(product.percentage)}</td>
                     <td>
-                      <RightArrow />
+                      <ButtonLink
+                        to={`/products/${product.id}`}
+                        state={{
+                          id: product.id,
+                          name: product.name,
+                          percentage: product.percentage,
+                          amount: product.amount,
+                        }}
+                        key={product.id}
+                      >
+                        <RightArrow />
+                      </ButtonLink>
                     </td>
                   </tr>
                 ))}
@@ -178,6 +191,7 @@ const Dashboard = () => {
               icon={<EveryUser />}
               title={"Clientes"}
               generalwidthContainer="675px"
+              colorTitle={theme.colors.grays.gray900}
               backgroundColor={theme.colors.primary.main}
               buttonHighOrLow={
                 <SwitchButton
@@ -193,7 +207,17 @@ const Dashboard = () => {
                     <td>{client.name}</td>
                     <td>{formatPercentage(client.percentage)}</td>
                     <td>
-                      <RightArrow />
+                      <ButtonLink
+                        to={`/customers/${client.id}`}
+                        state={{
+                          id: client.id,
+                          name: client.name,
+                          percentage: client.percentage,
+                        }}
+                        key={client.id}
+                      >
+                        <RightArrow />
+                      </ButtonLink>
                     </td>
                   </tr>
                 ))}
