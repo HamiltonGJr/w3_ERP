@@ -36,6 +36,7 @@ export interface MenuTableProps {
   children: ReactNode;
   generalwidthContainer: string;
   backgroundColor: string;
+  colorTitle: string;
 }
 
 export interface TableProps {
@@ -53,5 +54,7 @@ export interface SearchHeaderProps {
 export interface CardPredictionProps {
   client: string;
   onClickNavigate?: () => void;
-  id: string;
+  id: number;
+  telefone?: string;
+  email?: string;
 }
