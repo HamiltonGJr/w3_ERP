@@ -18,8 +18,9 @@ import {
 
 const CardPrediction: React.FC<CardPredictionProps> = ({
   client,
-  onClickNavigate,
   id,
+  telefone,
+  email,
 }) => {
   const adjustmentText = (client: string) => {
     if (client.length <= 17) {
@@ -50,7 +51,11 @@ const CardPrediction: React.FC<CardPredictionProps> = ({
             </ContainerTextPrediction>
           </ContainerGenericPrediction>
 
-          <ButtonNavigate onClick={onClickNavigate}>
+          <ButtonNavigate
+            to={`/prediction/${id}`}
+            state={{ id, client, telefone, email }}
+            key={id}
+          >
             <RightArrow />
           </ButtonNavigate>
         </ContainerGenericPrediction>
