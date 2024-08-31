@@ -1,16 +1,8 @@
 import styled from "styled-components";
 
 import theme from "../../styles/theme";
+import { Link } from "react-router-dom";
 
-export const ContainerBody = styled.div`
-  display: flex;
-`;
-export const ContainerMain = styled.div`
-  width: 85%;
-  height: 100vh;
-  margin-left: 15%;
-  overflow-y: auto;
-`;
 export const ContainerGraphic = styled.div`
   margin: 2% 0 0 1%;
   width: 98%;
@@ -37,4 +29,7 @@ export const ContainerGraphicCard = styled.div`
 export const ContainerMenu = styled.div`
   display: flex;
   justify-content: space-around;
+`;
+export const ButtonLink = styled(Link)`
+  cursor: pointer;
 `;
